@@ -3218,7 +3218,7 @@
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
-			color: #fff;
+			color: #FFF;
 			display: block;
 			font-size: 16px;
 			height: 2.25em;
@@ -3247,7 +3247,7 @@
 		}
 
 		.navPanelToggle *:before {
-			color: #fff;
+			color: #FFF;
 			display: block;
 			font-size: 16px;
 			height: 2.25em;
