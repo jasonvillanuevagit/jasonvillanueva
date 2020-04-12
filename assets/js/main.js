@@ -13,7 +13,6 @@
 		var	$window = $(window),
 			$body = $('body');
 
-		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
@@ -22,10 +21,8 @@
 				}, 100);
 			});
 
-		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
-		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
 				$.prioritize(
 					'.important\\28 medium\\29',
@@ -33,13 +30,11 @@
 				);
 			});
 
-		// Off-Canvas Navigation.
-
-			// Navigation Panel Toggle.
+		
 				$('<a href="#navPanel" class="navPanelToggle"></a>')
 					.appendTo($body);
 
-			// Navigation Panel.
+			
 				$(
 					'<div id="navPanel">' +
 						$('#nav').html() +
